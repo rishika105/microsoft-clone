@@ -193,51 +193,57 @@ body, html {
    font-size: 16px;
    margin-bottom: 25px;
 }
-footer{
+
+
+/* FOOTER SECTION */
+footer {
   margin-top: 80px;
 }
-.footer-start{
+.footer-start {
   display: flex;
-  gap:15px;
+  gap: 15px;
   margin-left: 70px;
   margin-bottom: 120px;
 }
 
-.footer-start img{
-      width:32px;
-      height:32px;
+.backbtn{
+margin-left: 500px;
 }
 
-.footer-lists{
-  background-color: #f2f2f2;
-  height:388px;
-}
-
-.footer-end{
-  background-color: #f2f2f2;
-  height:72px;
+.footer-start img {
+  width: 32px;
+  height: 32px;
 }
 
 .footer-lists {
   display: flex;
   flex-wrap: wrap;
-  background-color: #f1f1f1;
+  background-color: #f2f2f2;
   padding: 20px;
 }
 .footer-column {
   flex: 1;
   margin: 10px;
+  display: flex;
+  flex-direction: column;
 }
-.footer-column h1, .footer-column h2, .footer-column h3, .footer-column h4, .footer-column h5, .footer-column h6 {
+.footer-column h1,
+.footer-column h2,
+.footer-column h3,
+.footer-column h4,
+.footer-column h5,
+.footer-column h6 {
   margin-bottom: 10px;
-  color:#616161;
+  color: #616161;
   font-size: 15px;
   font-weight: 500;
-  opacity: 90;
+  opacity: 0.9;
+  line-height: 1.2; /* Adjust line-height if necessary */
 }
 .footer-column ul {
   list-style-type: none;
   padding: 0;
+  margin: 0; /* Ensure no extra margin */
 }
 .footer-column ul li {
   margin-bottom: 5px;
@@ -246,9 +252,13 @@ footer{
 .footer-column ul li a {
   text-decoration: none;
   color: #616161;
-  opacity: 90;
+  opacity: 0.9;
   font-size: 11px;
 }
 .footer-column ul li a:hover {
   text-decoration: underline;
+}
+.footer-end {
+  background-color: #f2f2f2;
+  height: 72px;
 }
